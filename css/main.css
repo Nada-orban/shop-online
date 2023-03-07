@@ -1,0 +1,158 @@
+:root {
+    --primaryColor: #f09d51;
+    --mainWhite: #fff;
+    --mainBlack: #222;
+    --mainGrey: #ececec;
+    --mainSpacing: 0.1rem;
+    --mainTransition: all 0.3s linear;
+}
+*{
+    box-sizing: border-box;
+
+    
+}
+body{
+    font-family:"Roboto",sans-serif;
+}
+
+.nav{
+    background-color:#ececec;
+}
+.nav .items .bars{
+    height: 25px;
+    color: black;
+}
+
+.nav .items .shoping-cart{
+    height: 25px;
+    
+}
+.nav .items .total-item{
+    position: relative;
+    cursor: pointer;
+}
+.nav .items .total-item .total-bag{
+    position: absolute;
+    background-color: #f09d51;
+    border-radius: 25%;
+    top: -13px;
+    right: -5px;
+    width:fit-content;
+    height:20px;
+    padding-right:4px;
+    padding-left: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cart{
+    background-color: #ececec;
+    position: fixed;
+    top: 50px;
+    right: -40px;
+    width: 0px;
+    height: 100%;
+    bottom: 0;
+    transition: var(--mainTransition);
+    overflow: hidden; 
+    z-index: -1;
+    transition: all 1 ease-in-out;
+    
+}
+
+.show-cart{
+    width: 500px;
+    z-index: 1000;
+}
+
+
+.cart .row .close-item .close{
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    color: black;
+    
+}
+.cart .cart-item .btn{
+    color:#222;
+    background-color: #f09d51;
+    width: 200px;
+    height:50px;
+    font-size: larger;
+
+}
+
+
+.funition-collection{
+    background-image: url("../images/hero-bcg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    background-position: center;
+}
+.funition-collection .collection{
+    background-color: #ececec;
+    width:max-content;
+}
+.funition-collection .collection .btn{
+    background-color: #f09d51;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.products .row .img-item{
+    position: relative;
+    overflow: hidden;
+    
+} 
+.products .row .img-item .add-cart{
+    background-color: #f09d51;
+    position: absolute;
+    top: 50%;
+    bottom: 10%;
+    right: 0;
+    transition:var(--mainTransition);
+    width: 0px;
+    height: 30px;
+    padding-top: 5px;
+    z-index: -1;
+    cursor: pointer;
+    
+}
+
+
+.products .row .img-item:hover .add-cart{
+    width: 150px;
+    z-index: 1;
+    
+}
+.products .row .img-item:hover img{
+    opacity: 0.5;
+}
+.products .row .img-item .add-cart:hover{
+    color: #ececec;
+}
+
+
+
+
+.products .row .bed-information{
+    padding-top: 20px;
+    font-weight: bold;
+}
+.products .row .bed-information h5{
+    font-weight: bolder;
+}
+.products .row .bed-information p{
+    color: #f09d51;
+}
+
+
+
+
+
+
+
+
